@@ -1,0 +1,339 @@
+/* Docs.css */
+.docs-container {
+  display: flex;
+  height: calc(100vh - 56px);
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.docs-sidebar {
+  width: 220px;
+  background-color: #f0f4f8;
+  color: #333;
+  padding: 20px 0;
+  overflow-y: auto;
+  border-right: 1px solid #e0e0e0;
+}
+
+.docs-sidebar h3 {
+  padding: 0 20px 15px;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: #1e3a8a;
+}
+
+.docs-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.docs-sidebar li {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border-left: 3px solid transparent;
+}
+
+.docs-sidebar li:hover {
+  background-color: #e6f0ff;
+}
+
+.docs-sidebar li.active {
+  background-color: #e6f0ff;
+  border-left: 3px solid #1e3a8a;
+  font-weight: 500;
+}
+
+.docs-content {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.docs-content h2 {
+  color: #1e3a8a;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.docs-content h3 {
+  color: #2c3e50;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.docs-content p {
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.feature-list li {
+  margin-bottom: 15px;
+  border-left: 3px solid #1e3a8a;
+  padding-left: 15px;
+}
+
+.feature-list h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: #1e3a8a;
+  font-size: 1.1rem;
+}
+
+.api-endpoint {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  border-left: 3px solid #1976d2;
+}
+
+.api-endpoint h3 {
+  margin-top: 0;
+  color: #1976d2;
+  font-size: 1.1rem;
+}
+
+.api-endpoint h4 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #2c3e50;
+  font-size: 1rem;
+}
+
+.api-endpoint pre {
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 10px;
+  border-radius: 4px;
+  overflow-x: auto;
+  margin: 10px 0;
+  border: 1px solid #e0e0e0;
+}
+
+.usage-section {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+}
+
+.usage-section h3 {
+  margin-top: 0;
+  color: #2c3e50;
+  font-size: 1.1rem;
+}
+
+.usage-section ol {
+  padding-left: 25px;
+}
+
+.usage-section li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.tech-section {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  border-left: 3px solid #1e3a8a;
+}
+
+.tech-section h3 {
+  margin-top: 0;
+  color: #1e3a8a;
+  font-size: 1.1rem;
+}
+
+.tech-section ul {
+  padding-left: 25px;
+}
+
+.tech-section li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+/* Model Architecture Styles */
+.model-workflow {
+  margin-bottom: 20px;
+}
+
+.pipeline-diagram {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  margin: 15px 0;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+}
+
+.pipeline-step {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 4px;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.pipeline-arrow {
+  color: #1e3a8a;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.neural-networks {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.model-card {
+  background-color: #f8f9fa;
+  border-left: 3px solid #1e3a8a;
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.model-card h4 {
+  color: #1e3a8a;
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.model-card h5 {
+  color: #2c3e50;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.model-card p {
+  margin: 5px 0;
+  color: #333;
+  font-size: 14px;
+}
+
+.model-card ul {
+  margin-top: 5px;
+  padding-left: 20px;
+}
+
+.model-card li {
+  margin-bottom: 3px;
+  color: #333;
+  font-size: 14px;
+}
+
+/* Button styles for the App.jsx component */
+.docs-button {
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.docs-button:hover {
+  background-color: #2a4db0;
+}
+
+.docs-button svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* Modal styles for documentation */
+.docs-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.docs-modal-content {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  height: 90%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.docs-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #1e3a8a;
+  color: white;
+}
+
+.docs-modal-header h2 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.docs-close-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.docs-modal-body {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+  .docs-container {
+    flex-direction: column;
+  }
+  
+  .docs-sidebar {
+    width: 100%;
+    max-height: 200px;
+  }
+  
+  .docs-modal-body .docs-container {
+    height: 100%;
+  }
+}
